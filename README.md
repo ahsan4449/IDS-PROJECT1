@@ -21,3 +21,7 @@ It allows users to upload a file and view its metadata such as file name, size, 
 - Deployment: Render
 
 ## 📂 Project Structure
+
+## 🌐 Live Demo
+https://ids-file-uploader.onrender.com
+
