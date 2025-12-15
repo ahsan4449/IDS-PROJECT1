@@ -68,15 +68,17 @@ def too_large(e):
     """Handle file too large error"""
     return jsonify({'error': 'File is too large. Maximum size is 16MB'}), 413
 
-if __name__ == '__main__':
-    print("=" * 50)
-    print("🚀 Flask server starting...")
-    print("📂 Make sure these files are in the same folder:")
-    print("   - app.py")
-    print("   - index.html")
-    print("   - style.css")
-    print("   - script.js")
-    print("=" * 50)
-    print("🌐 Open: http://127.0.0.1:5000")
-    print("=" * 50)
-    app.run(debug=True, port=5000)
+# if __name__ == '__main__':
+#     print("=" * 50)
+#     print("🚀 Flask server starting...")
+#     print("📂 Make sure these files are in the same folder:")
+#     print("   - app.py")
+#     print("   - index.html")
+#     print("   - style.css")
+#     print("   - script.js")
+#     print("=" * 50)
+#     print("🌐 Open: http://127.0.0.1:5000")
+#     print("=" * 50)
+#     app.run(debug=True, port=5000)
+if __name__ == "__main__":
+    app.run()
