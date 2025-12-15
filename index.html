@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-card">
+            <h1> File Uploader</h1>
+            <p class="subtitle">Upload your file and view its metadata</p>
+            
+            <form id="uploadForm" class="upload-form">
+                <div class="file-input-wrapper">
+                    <input type="file" id="fileInput" name="file" required>
+                    <label for="fileInput" class="file-label">
+                        <span id="fileName">Choose a file...</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span id="btnText">Upload File</span>
+                    <span id="loader" class="loader" style="display: none;"></span>
+                </button>
+            </form>
+            
+            <div id="message" class="message"></div>
+            
+            <div id="metadataSection" class="metadata-section" style="display: none;">
+                <h2>File Metadata</h2>
+                <table class="metadata-table">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody id="metadataBody">
+                        <!-- Metadata rows will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
