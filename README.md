@@ -21,6 +21,14 @@ It allows users to upload a file and view its metadata such as file name, size, 
 - Deployment: Render
 
 ## 📂 Project Structure
+  IDS-PROJECT1/
+├── app.py             # Flask backend app
+├── index.html         # UI for file upload
+├── style.css          # Styles for UI
+├── script.js          # Frontend JavaScript
+├── requirements.txt   # Python dependencies
+└── README.md          # Project documentation
+
 
 ## 🌐 Live Demo
 https://ids-file-uploader.onrender.com
